@@ -31,17 +31,25 @@ public class ModelLoader {
 	public ModelLoader() {
 		RESOURCE_SET = new ResourceSetImpl();
 	}
-	/*
-	 * This function converts input path to uri and return uri.
-	 * */
+	
+	/**
+	 * A method that converts input path to uri and return uri.
+	 * 
+	 * @param path
+	 * @return uri
+	 * @throws Exception
+	 */
 	public String getFileURI(String path) throws Exception {
 		File f = new File(path);
 		String uri = f.toURI().toString();
 		return uri;	
 	}
-	/*
-	 * This function inputs uri, load model and return that model.
-	 * */
+	/**
+	 * A method that loads UML/Ecore model from input URI.
+	 * 
+	 * @param uri:String
+	 * @return model:Object
+	 */
 	public Object loadModel(String uri){
 		URI modelUri = URI.createURI(uri);
 		registerPackages(RESOURCE_SET);
@@ -87,7 +95,6 @@ public class ModelLoader {
 		URIConverter.URI_MAP.put(URI.createURI("platform:/plugin/org.eclipse.uml2.uml/"), 
 				URI.createURI("jar:file:"+relPath+"/EMF_Lib/org.eclipse.uml2.uml_3.1.2.v201010261927.jar!/"));
 	}
-	
 	
 	private void registerResourceFactories() 
 	{

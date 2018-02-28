@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Be_LQBx2EeiiTfGHS6-WNw" name="Demo Package">
+  <packagedElement xmi:type="uml:Class" xmi:id="_Be_LQRx2EeiiTfGHS6-WNw" name="Student">
+    <ownedAttribute xmi:id="_Be_LQhx2EeiiTfGHS6-WNw" name="name" visibility="private" type="_BfAZYxx2EeiiTfGHS6-WNw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Be_LQxx2EeiiTfGHS6-WNw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Be_LRBx2EeiiTfGHS6-WNw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Be_yUBx2EeiiTfGHS6-WNw" name="rollNo" visibility="private" type="_BfAZZBx2EeiiTfGHS6-WNw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Be_yURx2EeiiTfGHS6-WNw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Be_yUhx2EeiiTfGHS6-WNw" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_Be_yUxx2EeiiTfGHS6-WNw" name="calculateGPA">
+      <ownedParameter xmi:id="_Be_yVBx2EeiiTfGHS6-WNw" name="grade" type="_BfAZZRx2EeiiTfGHS6-WNw"/>
+      <ownedParameter xmi:id="_Be_yVRx2EeiiTfGHS6-WNw" type="_BfAZZhx2EeiiTfGHS6-WNw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Be_yVhx2EeiiTfGHS6-WNw" name="Course">
+    <ownedAttribute xmi:id="_Be_yVxx2EeiiTfGHS6-WNw" name="title" visibility="private" type="_BfAZZRx2EeiiTfGHS6-WNw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Be_yWBx2EeiiTfGHS6-WNw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Be_yWRx2EeiiTfGHS6-WNw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_BfAZYBx2EeiiTfGHS6-WNw" name="code" visibility="private" type="_BfAZZhx2EeiiTfGHS6-WNw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BfAZYRx2EeiiTfGHS6-WNw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BfAZYhx2EeiiTfGHS6-WNw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_BfAZYxx2EeiiTfGHS6-WNw" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_BfAZZBx2EeiiTfGHS6-WNw" name="Integer"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_BfAZZRx2EeiiTfGHS6-WNw" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_BfAZZhx2EeiiTfGHS6-WNw" name="Integer"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BfAZZxx2EeiiTfGHS6-WNw" name="register" memberEnd="_BfAZaBx2EeiiTfGHS6-WNw _BfAZaxx2EeiiTfGHS6-WNw">
+    <ownedEnd xmi:id="_BfAZaBx2EeiiTfGHS6-WNw" name="course" type="_Be_yVhx2EeiiTfGHS6-WNw" association="_BfAZZxx2EeiiTfGHS6-WNw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BfAZaRx2EeiiTfGHS6-WNw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BfAZahx2EeiiTfGHS6-WNw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_BfAZaxx2EeiiTfGHS6-WNw" name="student" type="_Be_LQRx2EeiiTfGHS6-WNw" association="_BfAZZxx2EeiiTfGHS6-WNw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BfAZbBx2EeiiTfGHS6-WNw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BfAZbRx2EeiiTfGHS6-WNw"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Package>
