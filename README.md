@@ -1,2 +1,2 @@
 # Demo
-Exmaple projects for demonstration purpose
+Example projects for demonstration purpose
