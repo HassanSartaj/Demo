@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated tree -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dsml.tree.presentation.TreeModelWizardID"
+            name="%_UI_TreeModelWizard_label"
+            class="dsml.tree.presentation.TreeModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TreeModelFile.gif">
+         <description>%_UI_TreeModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated tree -->
+      <editor
+            id="dsml.tree.presentation.TreeEditorID"
+            name="%_UI_TreeEditor_label"
+            icon="icons/full/obj16/TreeModelFile.gif"
+            extensions="tree"
+            class="dsml.tree.presentation.TreeEditor"
+            contributorClass="dsml.tree.presentation.TreeActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

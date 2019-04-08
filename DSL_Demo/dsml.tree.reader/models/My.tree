@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree:Tree xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tree="http://www.example.org/tree" name="BT">
+  <node data="A" label="Root">
+    <children data="B" label="left">
+      <children data="B1"/>
+    </children>
+    <children data="C">
+      <children data="C1" label=""/>
+      <children data="C2"/>
+      <children data="C3"/>
+    </children>
+    <children data="D">
+      <children data="D1">
+        <children data="D11"/>
+      </children>
+      <children data="D">
+        <children data="D1">
+          <children data="D11"/>
+        </children>
+      </children>
+    </children>
+  </node>
+</tree:Tree>
